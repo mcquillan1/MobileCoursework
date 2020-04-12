@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MPD XML Starter code Semester B Session 2018 2019 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/currentRoadworks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Traffic Scotland Road Data"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Ross McQuillan - S1629587"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="20dp"
+            android:text="Current Incidents"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:id="@+id/tableTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_border"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Press to get Current Incidents" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/roadworkDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Current Roadworks"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/currentRoad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/my_hint"
+            android:inputType="textPersonName"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/searchtest"/>
+        <Button
+            android:id="@+id/currentRoadworksSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Search" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TableLayout
+            android:id="@+id/tableRoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_border"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <Button
+            android:id="@+id/roadworkButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Press to get Current Roadworks" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/plannedRoadworkDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Planned Roadworks"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/plannedRoad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/my_hint"
+            android:inputType="textPersonName"
+
+            />
+
+        <Button
+            android:id="@+id/plannedRoadworksSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Search" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TableLayout
+            android:id="@+id/tablePlannedRoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_border"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <Button
+            android:id="@+id/plannedRoadworkButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Press to get Current Roadworks" />
+
+
+    </LinearLayout>
+</ScrollView>
